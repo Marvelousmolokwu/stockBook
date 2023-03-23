@@ -74,7 +74,7 @@ body {
 }
 .swiper-pagination {
   position: absolute;
-  top: 90% !important;
+  top: 73% !important;
 }
 .sign_in--btn {
   width: 207px;
@@ -88,6 +88,7 @@ body {
   line-height: 158%;
   letter-spacing: 1%;
   font-family: "Roboto", sans-serif;
+  margin-top: 15px;
 }
 .sign_in--btn:hover:active {
   background-color: #cd5713;
