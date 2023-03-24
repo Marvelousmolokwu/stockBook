@@ -46,7 +46,7 @@ body {
   padding: 0 30px;
 }
 .swiper-slide .slider img {
-  width: 330px;
+  width: 300px;
 }
 .swiper-slide .slider3 {
   margin: 10% auto;
@@ -54,7 +54,7 @@ body {
 .slider--text {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 25px;
   justify-content: center;
   align-items: center;
 }
