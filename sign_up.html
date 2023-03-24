@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="images/logo.svg" />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="sign_in.css" />
+
+    <title>StockBook Sign In</title>
+  </head>
+
+  <body class="d-flex">
+    <div class="login-form">
+      <header class="d-flex ai-center">
+        <img src="images/full-logo.svg" class="logo" alt="" />
+      </header>
+      <h1>Create new account</h1>
+      <p id="instruction">Kindly input your details</p>
+
+      <form action="">
+        <label for="name">
+          Name
+          <input type="text" placeholder="Surname first" id="name" />
+        </label>
+
+        <label for="email">
+          Email
+          <input
+            type="email"
+            id="email"
+            placeholder="deborahallen12@gmail.com"
+          />
+        </label>
+
+        <label for="password">
+          Password
+          <input type="password" id="password" />
+        </label>
+
+        <div>
+          <label class="d-flex ai-center" for="remember">
+            <input type="checkbox" />
+            Remember Me
+          </label>
+
+          <!-- <a href="#" class="cta">Forgot Password?</a> -->
+        </div>
+
+        <div class="d-grid pi-center ta-center options">
+          <button>Sign up</button>
+
+          <p class="cta">
+            Already have an account? <a href="index.html"><b>Sign in</b></a>
+          </p>
+
+          <!-- divider -->
+          <span class="d-flex"
+            ><img src="images/divider.svg" class="divider" alt="" /> OR
+            <img src="images/divider.svg" class="divider" alt=""
+          /></span>
+
+          <p>Sign in with:</p>
+
+          <!--Social media icons -->
+          <div class="icon-container d-flex jc-center ai-center">
+            <a href=""><img src="images/icon-google.svg" alt="" /></a>
+            <a href=""><img src="images/icon-facebook.svg" alt="" /></a>
+            <a href=""><img src="images/icon-twitter.svg" alt="" /></a>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="side-img">
+
+              <img src="images/undraw_notebook_re_id0r 1.png" alt="" />
+              <div class="side-img--text">
+                <h3>Bookeeping made easy</h3>
+                <p>
+                  Keep records of financial affairs of your
+                  business easily
+                </p>
+             
+    </div>
+  </body>
+</html>

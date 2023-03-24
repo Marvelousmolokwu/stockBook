@@ -1,3 +1,13 @@
+:root {
+  --bg-gradient: 72.13deg, #4d57bf -17.21%, #0b1682 92.62%;
+  --color-cta: hsla(22, 97%, 52%, 1);
+  --hover-color-cta: rgb(198, 92, 31);
+  --input-color: hsl(232, 100%, 69%);
+  --checkbox-color: #eeebff;
+  --text-color: hsla(248, 92%, 37%, 1);
+  --ff-body: "Roboto", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -73,10 +83,12 @@ body {
 
   line-height: 31px;
 }
+.sign-up {
+  display: none;
+}
 
-.sign_in--btn {
-  width: 207px;
-  height: 50px;
+.sign_in--link {
+  padding: 15px 30px;
   background-color: #fb640d;
   color: #fff;
   border-radius: 10px;
@@ -87,15 +99,156 @@ body {
   letter-spacing: 1%;
   font-family: "Roboto", sans-serif;
   margin-top: 15px;
+  text-decoration: none;
 }
-.sign_in--btn:hover:active {
+
+.sign_in--link:hover:active {
   background-color: #cd5713;
 }
+.slider--sign_in > h5 {
+  margin-top: 20px;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  color: inherit;
+}
+
+label,
+h1 {
+  color: var(--text-color);
+}
+
+/* Utility Styles */
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.pi-center {
+  place-items: center;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+header {
+  margin-bottom: 1.5rem;
+}
+
+.carousel-container {
+  width: 50vw;
+  padding: 5rem;
+}
+
+.login-form {
+  width: 50vw;
+  padding: 2rem 7.25rem;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+#instruction {
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: 400;
+}
+
+#email,
+#password,
+#name,
+button {
+  width: 100%;
+  border-radius: 0.5rem;
+  height: 3rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+#email,
+#name,
+#password {
+  border: 1px solid var(--input-color);
+  padding-left: 1rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+button {
+  border-radius: 0.625rem;
+  background-color: var(--color-cta);
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+button:hover {
+  background-color: var(--hover-color-cta);
+}
+
+input[type="checkbox"] {
+  background-color: var(--checkbox-color);
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+}
+
+.options {
+  gap: 1rem;
+}
+
+.divider {
+  padding-inline: 1rem;
+  width: 10rem;
+}
+
+.cta {
+  color: var(--color-cta);
+}
+
+.icon-container img {
+  margin-inline: 1rem;
+}
+
 @media screen and (min-width: 1200px) {
   .container {
     display: flex;
   }
   .sign-up {
+    display: block;
     width: 50%;
     background-color: #fff;
   }
@@ -108,4 +261,8 @@ body {
   .swiper-button--btn {
     display: none;
   }
+  .slider--sign_in {
+    display: none;
+  }
 }
+/* sign up */

@@ -1,0 +1,316 @@
+:root {
+  --bg-gradient: 72.13deg, #4d57bf -17.21%, #0b1682 92.62%;
+  --color-cta: hsla(22, 97%, 52%, 1);
+  --hover-color-cta: rgb(198, 92, 31);
+  --input-color: hsl(232, 100%, 69%);
+  --checkbox-color: #eeebff;
+  --text-color: hsla(248, 92%, 37%, 1);
+  --ff-body: "Roboto", sans-serif;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+/* General Styles */
+body {
+  font-family: var(--ff-body);
+  font-size: 16px;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  color: inherit;
+}
+
+label,
+h1 {
+  color: var(--text-color);
+}
+
+/* Utility Styles */
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.pi-center {
+  place-items: center;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+header {
+  margin-bottom: 2.5rem;
+}
+
+.side-img {
+  width: 50vw;
+  background: radial-gradient(at top right, #0b1682, #4d57bf);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+}
+.side-img > img {
+  width: 500px;
+}
+.side-img--text {
+  width: 330px;
+  margin-top: 20px;
+  font-family: 20px;
+  line-height: 30px;
+}
+.side-img--text p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 18px;
+  line-height: 18px;
+  margin-top: 15px;
+}
+
+.login-form {
+  width: 50vw;
+  padding: 2rem 7.25rem;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+#instruction {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-weight: 400;
+}
+
+#email,
+#password,
+#name,
+button {
+  width: 100%;
+  border-radius: 0.5rem;
+  height: 3.75rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+#email,
+#name,
+#password {
+  border: 1px solid var(--input-color);
+  padding-left: 1rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+button {
+  border-radius: 0.625rem;
+  background-color: var(--color-cta);
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+button:hover {
+  background-color: var(--hover-color-cta);
+}
+
+input[type="checkbox"] {
+  background-color: var(--checkbox-color);
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+}
+
+.options {
+  gap: 1rem;
+}
+
+.divider {
+  padding-inline: 1rem;
+  width: 10rem;
+}
+
+.cta {
+  color: var(--color-cta);
+}
+
+.icon-container img {
+  margin-inline: 1rem;
+}
+
+/* Responsiveness for Tablet */
+@media screen and (max-width: 75rem) {
+  .logo {
+    width: 8.5rem;
+  }
+
+  .login-form {
+    width: 100%;
+    padding: 8rem 8rem;
+  }
+
+  .divider {
+    width: 8rem;
+  }
+
+  header {
+    margin-bottom: 2rem;
+  }
+  .side-img {
+    display: none;
+  }
+
+  #email,
+  #password,
+  #name,
+  button {
+    height: 3rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 55rem) {
+  body {
+    font-size: 0.85rem;
+  }
+
+  .logo {
+    width: 8rem;
+  }
+
+  .side-img {
+    display: none;
+  }
+
+  .login-form {
+    width: 100%;
+    padding: 2rem 3rem;
+  }
+
+  .divider {
+    width: 18rem;
+  }
+
+  input[type="checkbox"] {
+    background-color: var(--checkbox-color);
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+  }
+
+  button {
+    width: 80%;
+  }
+}
+.side-img {
+}
+
+@media screen and (max-width: 45rem) {
+  .divider {
+    max-width: 12rem;
+  }
+
+  input[type="checkbox"] {
+    background-color: var(--checkbox-color);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+  }
+
+  #email,
+  #password,
+  #name,
+  button {
+    border-radius: 0.4rem;
+    height: 2.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+  }
+}
+
+/* Responsiveness for Mobile */
+@media screen and (max-width: 35rem) {
+  body {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 6rem;
+  }
+
+  .login-form {
+    padding: 2rem 2rem;
+  }
+
+  .divider {
+    width: 8rem;
+  }
+
+  #email,
+  #password,
+  #name,
+  button {
+    height: 3.75rem;
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+
+  button {
+    width: 60%;
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 30rem) {
+  .divider {
+    width: 5rem;
+  }
+}
+
+/* carousel styles */
