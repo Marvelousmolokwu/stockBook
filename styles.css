@@ -43,7 +43,10 @@ body {
   line-height: 30px;
   gap: 40px;
   text-align: center;
-  padding: 0 20px;
+  padding: 0 30px;
+}
+.swiper-slide .slider img {
+  width: 350px;
 }
 .swiper-slide .slider3 {
   margin: 10% auto;
@@ -51,7 +54,7 @@ body {
 .slider--text {
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 30px;
   justify-content: center;
   align-items: center;
 }
