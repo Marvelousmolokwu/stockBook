@@ -245,8 +245,7 @@ input[type="checkbox"] {
     width: 80%;
   }
 }
-.side-img {
-}
+
 
 @media screen and (max-width: 45rem) {
   .divider {
